@@ -173,10 +173,10 @@
 	function toggleLogoImg(id) {
     	var img = document.getElementById(id).src;
         if (img.indexOf('dark.png')!=-1) {
-            document.getElementById(id).src  = "https://www.jessicajorgenson.site/images/logo.png";
+            document.getElementById(id).src  = "https://www.qonsulter.de/images/logo-light.png";
         }
          else {
-           document.getElementById(id).src = "https://www.jessicajorgenson.site/images/logo-dark.png";
+           document.getElementById(id).src = "https://www.qonsulter.de/images/logo-dark.png";
        }
 
     }

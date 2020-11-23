@@ -176,7 +176,7 @@
             document.getElementById(id).src  = "https://www.jessicajorgenson.site/images/logo.png";
         }
          else {
-           document.getElementById(id).src = "https://www.jessicajorgenson.site/images/logo-dark.png";
+           document.getElementById(id).src = "https://www.jessicajorgenson.site/logo-dark.png";
        }
 
     }
