@@ -53,24 +53,24 @@ URL = "#home"
 weight = 1
 
 [[menu.main]]
-name = "About Me"
+name = "About me"
 URL = "#about"
 weight = 2
 
-#[[menu.main]]
-#name = "Service"
-#URL = "#service"
-#weight = 3
+[[menu.main]]
+name = "Service"
+URL = "#service"
+weight = 3
 
 [[menu.main]]
 name = "Portfolio"
 URL = "#portfolio"
 weight = 4
 
-#[[menu.main]]
-#name = "Testimonial"
-#URL = "#testimonial"
-#weight = 5
+[[menu.main]]
+name = "Testimonial"
+URL = "#testimonial"
+weight = 5
 
 [[menu.main]]
 name = "Contact"
@@ -83,8 +83,8 @@ weight = 6
 logo_light = "images/logo.png"
 logo_dark = "images/logo-dark.png"
 # Meta data
-description = "Jessica Jorgenson's website"
-author = "Jessica Jorgenson"
+description = "This is meta description"
+author = "somrat"
 # contact form action
 contact_form_action = "" # contact form works with https://formspree.io
 # Google analytics
@@ -98,23 +98,23 @@ preloader = "images/preloader.gif" # use jpg, png, svg or gif format.
 ############################# social site ########################
 [[params.social]]
 icon = "fa-facebook-f" # fontawesome icon 4.7.0 : https://fontawesome.com/v4.7.0/icons/
-link = "https://www.facebook.com/jorgenson.jessica"
+link = "https://www.facebook.com/somrat.mac"
 
-#[[params.social]]
-#icon = "fa-twitter" # fontawesome icon 4.7.0 : https://fontawesome.com/v4.7.0/icons/
-#link = "https://twitter.com/somrat_37"
+[[params.social]]
+icon = "fa-twitter" # fontawesome icon 4.7.0 : https://fontawesome.com/v4.7.0/icons/
+link = "https://twitter.com/somrat_37"
 
 [[params.social]]
 icon = "fa-instagram" # fontawesome icon 4.7.0 : https://fontawesome.com/v4.7.0/icons/
-link = "https://www.instagram.com/jessica.jorgenson/"
+link = "https://www.instagram.com/somrat_sorkar/"
 
 [[params.social]]
 icon = "fa-github" # fontawesome icon 4.7.0 : https://fontawesome.com/v4.7.0/icons/
-link = "https://github.com/jessica-jorgenson"
+link = "https://github.com/Somrat37"
 
 [[params.social]]
 icon = "fa-linkedin" # fontawesome icon 4.7.0 : https://fontawesome.com/v4.7.0/icons/
-link = "https://www.linkedin.com/in/jorgensonjessica/"
+link = "https://www.linkedin.com/in/somrat-sorkar-872581158/"
 
 
 ################################### English language #####################################
