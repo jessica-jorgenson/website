@@ -134,7 +134,7 @@ portfolio:
     - name : "MSU AWC Website"
       image : "images/portfolio/item1.jpg"
       date : "Summer 2020"
-      category : "Web Development/UX Design"
+      category : "Web Development"
       
     # portfolio item loop
     - name : "UX Design Project"
