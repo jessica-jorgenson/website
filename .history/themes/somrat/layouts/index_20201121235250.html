@@ -373,7 +373,7 @@
             {{ $categories = $categories | append .category }}
             {{ end }}
             {{ range ( $categories | uniq ) }}
-            <li data-filter="{{ . | urlize }}" class="hvr-sweep-to-right">{{ . }}</li>
+            <li data-filter="{{ . | urlize }}" class="hvr-sweep-to-right">{{ . | humanize }}</li>
             {{ end }}
           </ul>
         </div>
