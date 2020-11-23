@@ -173,7 +173,7 @@ testimonial:
 
 ######################### funfacts #############################3
 funfacts:
-  enable : false
+  enable : true
   funfacts_list:
     # funfacts item loop
     - name : "HANDS TO WORK"
