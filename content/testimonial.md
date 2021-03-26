@@ -17,6 +17,10 @@ testimonial_slider:
   designation : "PROFESSIONAL COLLEAGUE/COLLEGE CLASSMATE"
   content : "Jessica pours passion into her work and ensures that the details of the work produced are excellent."
 
+- name: "Lindsey H"
+  designation : "MENTOR"
+  content : "Jessica is super driven and my experience coordinating with her as the AWC President was amazing. Her preparedness and followthrough in addition to her general upbeat personality made her a joy to work with."
+
 # custom style
 custom_class: "" 
 custom_attributes: "" 
