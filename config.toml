@@ -2,8 +2,24 @@
 baseURL = "https://www.jessicajorgenson.site"
 title = "Jessica Jorgenson"
 theme = "somrat"
+# post pagination
+paginate = "6"
+# post excerpt
+summaryLength = "10"
 # disable language
 disableLanguages = [] # disable language from here
+# google analutics
+googleAnalytics = "" # example : UA-123-45
+# disqus short name
+disqusShortname = "" # get your shortname form here : https://disqus.com
+
+
+############################# Outputs ##############################
+[outputs]
+home = ["HTML"]
+
+[markup.goldmark.renderer]
+unsafe= true
 
 ############################# Plugins ##############################
 
@@ -11,15 +27,11 @@ disableLanguages = [] # disable language from here
 [[params.plugins.css]]
 link = "plugins/bootstrap/bootstrap.min.css"
 [[params.plugins.css]]
-link = "plugins/fontawesome/css/fontawesome.min.css"
+link = "https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900&display=swap"
+[[params.plugins.css]]
+link = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
 [[params.plugins.css]]
 link = "plugins/hover/hover.css"
-[[params.plugins.css]]
-link = "plugins/fontawesome/css/solid.min.css"
-[[params.plugins.css]]
-link = "plugins/fontawesome/css/brands.min.css"
-[[params.plugins.css]]
-link = "plugins/fontawesome/css/regular.min.css"
 [[params.plugins.css]]
 link = "plugins/magnific-popup/magnific-popup.css"
 [[params.plugins.css]]
@@ -28,8 +40,6 @@ link = "plugins/owl-carousel/owl.carousel.min.css"
 link = "plugins/owl-carousel/owl.theme.default.min.css"
 [[params.plugins.css]]
 link = "plugins/text-animation/text-animation.css"
-[[params.plugins.css]]
-link = "https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900&display=swap"
 
 # JS Plugins
 [[params.plugins.js]]
@@ -43,58 +53,23 @@ link = "plugins/text-animation/text-animation.js"
 [[params.plugins.js]]
 link = "plugins/jquery.waypoints.min.js"
 [[params.plugins.js]]
-link = "plugins/filterizr/jquery.filterizr.min.js"
+link = "plugins/shuffle/shuffle.min.js"
 [[params.plugins.js]]
 link = "plugins/magnific-popup/jquery.magnific-popup.min.js"
 [[params.plugins.js]]
 link = "plugins/owl-carousel/owl.carousel.min.js"
 
 
-############################## navigation ###############################
-
-# main menu
-[[menu.main]]
-name = "Home"
-URL = "#home"
-weight = 1
-
-[[menu.main]]
-name = "About Me"
-URL = "#about"
-weight = 2
-
-#[[menu.main]]
-#name = "Service"
-#URL = "#service"
-#weight = 3
-
-[[menu.main]]
-name = "Portfolio"
-URL = "#portfolio"
-weight = 4
-
-#[[menu.main]]
-#name = "Testimonial"
-#URL = "#testimonial"
-#weight = 5
-
-[[menu.main]]
-name = "Contact"
-URL = "#contact"
-weight = 6
-
-
 #################### default parameters ################################
 [params]
+favicon = "images/favicon.png"
 logo_light = "images/logo.png"
 logo_dark = "images/logo-dark.png"
+logo_dark_full = "images/full-name-logo-dark.png"
+logo_width = "150px"
 # Meta data
 description = "Jessica Jorgenson's website"
 author = "Jessica Jorgenson"
-# contact form action
-contact_form_action = "https://airform.io/jorgenson.jess@gmail.com" # contact form works with https://formspree.io
-# Google analytics
-google_analytics_id = "" # your id
 
 # Preloader
 [params.preloader]
@@ -103,32 +78,65 @@ preloader = "images/preloader.gif" # use jpg, png, svg or gif format.
   
 ############################# social site ########################
 [[params.social]]
-icon = "fa-facebook-f" # fontawesome icon 4.7.0 : https://fontawesome.com/v4.7.0/icons/
-link = "https://www.facebook.com/jorgenson.jessica"
-
-#[[params.social]]
-#icon = "fa-twitter" # fontawesome icon 4.7.0 : https://fontawesome.com/v4.7.0/icons/
-#link = "https://twitter.com/somrat_37"
+icon = "fab fa-facebook-f"
+link = "https://www.facebook.com/jorgenson.jessica/"
 
 [[params.social]]
-icon = "fa-instagram" # fontawesome icon 4.7.0 : https://fontawesome.com/v4.7.0/icons/
-link = "https://www.instagram.com/jessica.jorgenson/"
+icon = "fab fa-twitter"
+link = "https://twitter.com/jorgensonjess"
 
 [[params.social]]
-icon = "fa-github" # fontawesome icon 4.7.0 : https://fontawesome.com/v4.7.0/icons/
+icon = "fab fa-instagram"
+link = "https://www.instagram.com/jessica.jorgenson"
+
+[[params.social]]
+icon = "fab fa-github"
 link = "https://github.com/jessica-jorgenson"
 
 [[params.social]]
-icon = "fa-linkedin" # fontawesome icon 4.7.0 : https://fontawesome.com/v4.7.0/icons/
-link = "https://www.linkedin.com/in/jorgensonjessica/"
+icon = "fab fa-linkedin"
+link = "https://www.linkedin.com/in/jorgensonjessica"
 
 
 ################################### English language #####################################
 [Languages.en]
 languageName = "En"
 languageCode = "en-us"
-contentDir = "content/english"
+contentDir = "content"
 weight = 1
 home = "Home"
 # copyright
-copyright = "Copyright &copy; Built with Hugo and Somrat"
+copyright = "Copyright &copy; 2021 Jessica Jorgenson"
+
+
+################# english navigation ##################
+
+# main menu
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "About Me"
+pre = "#"
+url = "about"
+weight = 2
+
+[[menu.main]]
+name = "Portfolio"
+pre = "#"
+url = "portfolio"
+weight = 4
+
+[[menu.main]]
+name = "Testimonials"
+pre = "#"
+url = "testimonials"
+weight = 5
+
+[[menu.main]]
+name = "Contact"
+pre = "#"
+url = "contact"
+weight = 6
